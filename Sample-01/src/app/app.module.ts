@@ -41,10 +41,8 @@ import { environment as env } from '../environments/environment';
     HighlightModule,
     FontAwesomeModule,
     AuthModule.forRoot({
-      ...env.auth,
-      httpInterceptor: {
-        ...env.httpInterceptor,
-      },
+      domain: 'dev-uai25tdjqul077vl.us.auth0.com',
+      clientId: '7Z8RfkCfUPTyfWGBsKKMn6d1mW859a9g',
     }),
   ],
   providers: [
@@ -69,4 +67,4 @@ import { environment as env } from '../environments/environment';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
